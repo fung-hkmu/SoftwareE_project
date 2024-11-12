@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FoodOrderingAndTrackingApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_order">Order</string>
+    <string name="title_record">Record</string>
+    <string name="title_more">More</string>
+    <string name="quantity_options">open</string>
+</resources>
