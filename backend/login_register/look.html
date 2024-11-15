@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Post Form</title>
+  </head>
+  <body>
+    <p>Click the submit button to send a request to the server</p>
+    <form id="myForm1">
+      <h1>Login Testing</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="loginUsername" name="username" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="text" id="loginPassword" name="password" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <form id="myForm2">
+      <h1>Register Testing</h1>
+      <label for="username">Username:</label>
+      <input type="text" id="regUsername" name="username" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="text" id="regPassword" name="password" />
+      <br />
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="number" id="regPhoneNumber" name="phonenumber" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" id="regEmail" name="email" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      document
+        .getElementById("myForm1")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const username = document.getElementById("loginUsername").value;
+          const password = document.getElementById("loginPassword").value;
+          const data = {
+            username: username,
+            password: password,
+          };
+          const response = await fetch("http://localhost:3000/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          // render a new page if a response is received
+          const resultPage = await response.text();
+          document.open();
+          document.write(resultPage);
+          document.close();
+        });
+
+        document
+        .getElementById("myForm2")
+        .addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const username = document.getElementById("regUsername").value;
+          const password = document.getElementById("regPassword").value;
+          const phoneNumber = document.getElementById("regPhoneNumber").value;
+          const email = document.getElementById("regEmail").value;
+          const data = {
+            username: username,
+            password: password,
+            phoneNumber: parseInt(phoneNumber),
+            email: email,
+          };
+          const response = await fetch("http://localhost:3000/register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+          });
+
+          // render a new page if a response is received
+          const resultPage = await response.text();
+          document.open();
+          document.write(resultPage);
+          document.close();
+        });
+    </script>
+  </body>
+</html>
