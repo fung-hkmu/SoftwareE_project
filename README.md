@@ -1,10 +1,10 @@
 # SoftwareE_project
 COMP 3500SEF 9-12/2024 - Group3 - Food Ordering and Tracking App
-# Moblie App:
+# | Moblie App |
 
-# Background App:
+# | Background App |
 
-# Server:
+# | Server |
 ## Usage
 Start the server with:
 ```bash
