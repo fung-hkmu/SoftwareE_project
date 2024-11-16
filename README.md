@@ -1,10 +1,17 @@
 # SoftwareE_project
 COMP 3500SEF 9-12/2024 - Group3 - Food Ordering and Tracking App
-# | Moblie App |
+# | Frontend |
+1. Enter your phone number and password, and click the "Log In" button to log in. If you don't have an account, click "Registration" to register.
+2. Fill all the required information and click "Submit" button to finish registration.
+3. Click "Order now" button to start ordering food.
+4. Click the button on the right hand side of your targeted food kind.
+5. Click the item that you want.
+6. Click the "Add to shopping bag" button to add item to your shopping cart.
+7. If you want to order more food, click "Purchase additional food" button. If you finish ordering, click "Choose how to pick up your meal".
+8. In the payment page, you can select the payment method you want and click "Confirm payment" button to confirm. 
+9. You can review your order record in the record page. Click the record row that you want to detail information.
 
-# | Background App |
-
-# | Server |
+# | Backend |
 ## Usage
 Start the server with:
 ```bash
