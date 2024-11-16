@@ -1,6 +1,7 @@
 # SoftwareE_project
 COMP 3500SEF 9-12/2024 - Group3 - Food Ordering and Tracking App
 # | Frontend |
+## App Guideline 
 1. Enter your phone number and password, and click the "Log In" button to log in. If you don't have an account, click "Registration" to register.
 2. Fill all the required information and click "Submit" button to finish registration.
 3. Click "Order now" button to start ordering food.
